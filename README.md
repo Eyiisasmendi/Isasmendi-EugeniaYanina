@@ -74,4 +74,4 @@ La siguiente tabla describe la estructura de la entidad "Equipo" en la base de d
 | nombre           | Nombre del equipo.                                      |
 | contacto          | Información de contacto del equipo (capitán u otra persona de contacto). |
 | estadísticas      | Datos de estadísticas del equipo (por ejemplo, juegos ganados, perdidos, empates). |
-| fecha_creación    | Fecha de creación del equipo (opcional). |
+| fecha_creación    | Fecha de creación del equipo. |
