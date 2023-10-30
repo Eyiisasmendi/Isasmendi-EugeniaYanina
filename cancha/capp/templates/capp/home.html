@@ -1,0 +1,16 @@
+{% extends 'capp/base.html' %}
+{%load static%}
+{%block title %}Inicio-Cancha{% endblock %}
+{%block content %}
+<main role="main" class="container-fluid">
+    <div class="starter-template">
+        <h1>Bienvenidos al Sitio web de Sistema de Gestión <span class="fw-bold text-success"> "La Esquina" </span> </h1>
+        <p class="lead">
+            Reserva tú Cancha de Fútbol en tan solo un Click. <br>
+            Automatiza y Ahorra Tiempo con Nuestro Sistema de Gestión.<br>
+        </p>
+        <p><span class="fw-bold text-success">¡Descubre quien lo realizo y como fue! </span></p>
+        <button type="button" class="btn btn-outline-success"><a href="{% url 'sobre-mi' %}">ver mas</a></button>
+    </div>
+</main>
+{%endblock%}
