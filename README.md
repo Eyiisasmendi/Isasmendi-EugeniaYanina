@@ -23,3 +23,13 @@ Es una aplicación web para poder administrar los turnos de canchas segun el dep
   
   <li><b> Gestión de Notificaciones: </b> Envía recordatorios y confirmaciones de reservas a los clientes por correo electrónico o mensajes de texto, whatsApp.</li>
 </ul>
+
+| Campo        | Descripción                              |
+|-------------- |-----------------------------------------|
+| id           | Identificador único de la reserva.     |
+| cliente_id   | ID del cliente que hizo la reserva.    |
+| cancha_id    | ID de la cancha reservada.              |
+| equipo_id    | ID del equipo (si es una reserva para un partido de equipo). |
+| fecha        | Fecha y hora de la reserva.            |
+| estado       | Estado de la reserva (confirmada, pendiente, cancelada, etc.). |
+
