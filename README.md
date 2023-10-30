@@ -23,13 +23,51 @@ Es una aplicación web para poder administrar los turnos de canchas segun el dep
   
   <li><b> Gestión de Notificaciones: </b> Envía recordatorios y confirmaciones de reservas a los clientes por correo electrónico o mensajes de texto, whatsApp.</li>
 </ul>
+<h2>Modelo de Tabla:</h2>
+<br>
 
-| Campo        | Descripción                              |
+| Registro de Usuario                            |
+|-------------- |-----------------------------------------|
+| Campo       | Descripción                              |
+|-------------- |-----------------------------------------|
+| id           | Identificador único del usuario.  |
+| nombre  | Nombre del usuario.    |
+|rol | Rol del usuario (administrador, empleado, cliente).              |
+|correo_electrónico | Correo electrónico del usuario. |
+|contraseña | Contraseña (generalmente almacenada de manera segura con 8 caracteres,etc).|
+
+<br>
+| Registro de Clientes                             |
+|-------------- |-----------------------------------------|
+| Campo       | Descripción                              |
+|-------------- |-----------------------------------------|
+| id           | Identificador único del cliente.    |
+| nombre  |Nombre del cliente.    |
+|teléfono | Número de teléfono del cliente.              |
+|correo_electrónico | Correo electrónico del cliente. |
+| socio | ser socio seria un descuento para acceder a la cancha |
+
+<br>
+| Registro de Reservas                            |
+|-------------- |-----------------------------------------|
+| Campo       | Descripción                              |
 |-------------- |-----------------------------------------|
 | id           | Identificador único de la reserva.     |
 | cliente_id   | ID del cliente que hizo la reserva.    |
 | cancha_id    | ID de la cancha reservada.              |
 | equipo_id    | ID del equipo (si es una reserva para un partido de equipo). |
 | fecha        | Fecha y hora de la reserva.            |
-| estado       | Estado de la reserva (confirmada, pendiente, cancelada, etc.). |
+|descuento     | si es socio tiene descuento |
+| estado       | Estado de la reserva (confirmada, pendiente, cancelada). |
 
+<br>
+| Registro de Cancha                             |
+|-------------- |-----------------------------------------|
+| Campo       | Descripción                              |
+|-------------- |-----------------------------------------|
+| id           |Identificador único de la cancha.   |
+| nombre  |Nombre o número de la cancha.   |
+|categoria | segun la edades (infantil,juvenil, adulto). |
+|tipo_superficie| Tipo de superficie de la cancha (césped sintético, tierra, cemento).|              |
+|precio | Tarifa por el uso de la cancha . |
+|correo_electrónico | Correo electrónico del cliente. |
