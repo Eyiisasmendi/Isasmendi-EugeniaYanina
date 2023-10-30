@@ -63,4 +63,15 @@ Es una aplicación web para poder administrar los turnos de canchas segun el dep
 | categoría        | Categoría de la cancha (según edades: infantil, juvenil, adulto). |
 | tipo_superficie  | Tipo de superficie de la cancha (césped sintético, tierra, cemento). |
 | precio           | Tarifa por el uso de la cancha.                           |
-| correo_electrónico | Correo electrónico de la cancha (si es aplicable).      |
+
+## Registro de Equipos
+
+La siguiente tabla describe la estructura de la entidad "Equipo" en la base de datos:
+
+| Campo            | Descripción                                             |
+|------------------|---------------------------------------------------------|
+| id               | Identificador único del equipo.                        |
+| nombre           | Nombre del equipo.                                      |
+| contacto          | Información de contacto del equipo (capitán u otra persona de contacto). |
+| estadísticas      | Datos de estadísticas del equipo (por ejemplo, juegos ganados, perdidos, empates). |
+| fecha_creación    | Fecha de creación del equipo (opcional). |
